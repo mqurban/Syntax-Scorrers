@@ -1,0 +1,284 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: 'inter_regular';
+    src: url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-Regular.woff2) format("woff2");
+}
+
+@font-face
+{
+    font-family: 'inter_semibold';
+    src: url(https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/fonts/Inter-SemiBold.woff2) format("woff2");
+}
+
+.fk-slider
+{
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 264px;
+
+    >.fk-cards
+    {
+        position: relative;
+        left: 0px;
+        width: max-content;
+        height: 100%;
+        display: flex;
+        background-color: white;
+        transition: all 0.5s ease;
+
+        .fk-card-wrapper
+        {
+            min-width: 216px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+
+            .fk-card
+            {
+                width: 200px;
+                height: inherit;
+                display: grid;
+                grid-template-rows: 1fr auto;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                text-align: center;
+                padding: 6px;
+
+                .fk-img-wrapper
+                {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    overflow: hidden;
+                    border-radius: 0.125rem;
+                    
+                    img
+                    {
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 100%;
+                        width: 100%;
+                        padding: .5rem; 
+                        object-fit: contain;
+                        object-position: center;
+                        transition: all 0.5s ease;
+
+                        &:hover
+                        {
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .fk-content-wrapper
+                {
+                    display: grid;
+                    width: 100%;
+                    height: fit-content;
+                    padding-block: 0.5rem;
+                    line-height: 20px;
+                    letter-spacing: -0.01px;
+                    
+                    .fk-title
+                    {
+                        font-size: 14px;
+                        font-family: inter_regular, sans-serif;
+                    }
+
+                    .fk-price
+                    {
+                        font-size: 14px;
+                        font-weight: 700;
+                        font-family: inter_semibold, sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    .fk-nav
+    {
+        position: absolute;
+        z-index: 9999;
+        display: grid;
+        place-content: center;
+        padding: 2.5rem .5rem;
+        cursor: pointer;
+        background: white;
+        box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+        span
+        {
+            display: grid;
+            place-content: center;
+            margin-inline: 0.5rem;
+
+            img
+            {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &.left
+        {
+            left: 0;
+            top: 50%;
+            border-radius: 0 4px 4px 0;
+            transform: translateY(-50%);
+
+            span
+            {
+                transform: rotate(90deg);
+            }
+        }
+
+        &.right
+        {
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 4px 0 0 4px;
+
+            span
+            {
+                transform: rotate(-90deg);
+            }
+        }
+
+    }
+}
+
+/* utility class  */
+.hidden
+{
+    display: none !important;
+}
+
+
+
+
+/* slider 2 css   */
+
+
+/* Adjust container width and height */
+.slider-wrapper {
+    width: 200%; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    position: relative;
+}
+
+/* Style the arrow buttons */
+.slider-arrow {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-arrow-up {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-arrow-down {
+    left: 50%;
+    bottom: 10px; /* Adjust as needed */
+    transform: translateX(-50%);
+}
+
+.tns-outer button {
+    background-color: rgb(32, 32, 255);
+    color: white; /* Set text color to contrast with background */
+    border: none; /* Remove default button border */
+    border-radius: 50px; /* Increase border radius for a rounder shape */
+    padding: 5px 20px; /* Add padding for better visual appearance */
+    font-size: 10px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; /* Convert text to uppercase */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect for smoother hover */
+}
+
+.tns-outer button:hover {
+    background-color: darkblue; /* Darken background color on hover */
+}
+
+
+
+/* MOSAIC VIEW CSS  */
+
+
+/* New CSS for the mosaic view */
+.gallery {
+    margin-top: 20px; /* Adjust as needed */
+    overflow: hidden;
+}
+.image-container {
+    margin: 5px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.gallery .tall img {
+    height: 200px; /* Adjust the height of tall images */
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+.lightbox h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.lightbox p {
+    margin-bottom: 15px;
+}
+.lightbox .read-more {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
