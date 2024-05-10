@@ -35,7 +35,12 @@ This software is written by the mutual effort of diverse team members :
 [Ayesha Arif](https://www.linkedin.com/in/ayesha-arif-a760a6217/)**.
 
 Also, thanks to all [contributors](https://github.com/mqurban/Syntax-Scorrers/graphs/contributors) of the software.
- 
+
+# Presentation Slides:
+
+See the video [here](https://youtu.be/WLUvT37nfpM?feature=shared)
+
+
  # Demo 
 
  See the demo [here](https://youtu.be/q8M74Zzyd5I?feature=shared).
