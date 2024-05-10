@@ -22,6 +22,8 @@ or
 5. Push to the Branch (`git push origin yourBranchName`)
 6. Open a Pull Request
 
+### Where to ask for help?
+Open a discussion or stop by our [discord](https://discord.com/channels/1233030173209657384/1233030173209657387) server
 
  ## Team Members
 This software is written by the mutual effort of diverse team members :
