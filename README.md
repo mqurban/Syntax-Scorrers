@@ -4,6 +4,25 @@
   <img src="https://raw.githubusercontent.com/mqurban/Syntax-Scorrers/main/Scorrers.webp"/>
  </div>
 
+ ## Contributing 
+
+Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+To contribute to the Food Complaint Resolution App, 
+
+Clone this repo locally and commit your code on a separate branch.
+If you're making core changes please write unit tests for your code, and check that everything works by running the following before opening a pull-request
+
+or 
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b yourBranchName`)
+3. Make changes and make sure everything is working fine
+4. Commit your Changes (`git commit -m 'Add message here'`)
+5. Push to the Branch (`git push origin yourBranchName`)
+6. Open a Pull Request
+
+
  ## Team Members
 This software is written by the mutual effort of diverse team members :
 **Team Leader [Muhammad Qurban](https://www.linkedin.com/in/mr-qurban/)**,
