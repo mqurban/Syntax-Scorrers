@@ -8,7 +8,7 @@
 
 Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-To contribute to the Food Complaint Resolution App, 
+To contribute to the Our Project, 
 
 Clone this repo locally and commit your code on a separate branch.
 If you're making core changes please write unit tests for your code, and check that everything works by running the following before opening a pull-request
